@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P9i-jf-IcX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--청바지션-->
+        <scene sceneID="Id3-Qp-A4R">
+            <objects>
+                <tabBarController title="청바지션" id="P9i-jf-IcX" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nWQ-O3-AeA">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bxm-tu-KOx" kind="relationship" relationship="viewControllers" id="osr-0G-dRC"/>
+                        <segue destination="6Rc-la-Bvf" kind="relationship" relationship="viewControllers" id="KPq-eU-oYH"/>
+                        <segue destination="UU8-EF-3Ne" kind="relationship" relationship="viewControllers" id="2Lf-Wc-MPp"/>
+                        <segue destination="6Li-QI-nZj" kind="relationship" relationship="viewControllers" id="iyD-8D-k79"/>
+                        <segue destination="I6A-FF-QyT" kind="relationship" relationship="viewControllers" id="LRg-7t-yIW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hmd-db-wN8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2969" y="2487"/>
+        </scene>
+        <!--알림-->
+        <scene sceneID="ExN-If-bEP">
+            <objects>
+                <viewController title="알림" id="2tE-JC-6Rh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gdk-DH-sPC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="faT-mG-aqc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="알림" id="G6T-tK-MH0"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kdK-eT-5Au" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3572" y="4182"/>
+        </scene>
+        <!--알림-->
+        <scene sceneID="lJx-Fs-vsE">
+            <objects>
+                <navigationController id="6Rc-la-Bvf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="알림" image="bell" catalog="system" id="8eA-ID-lZj"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="383-sV-eLn">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2tE-JC-6Rh" kind="relationship" relationship="rootViewController" id="owi-fC-zeB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hCi-y8-u0s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3572" y="3417"/>
+        </scene>
+        <!--검색-->
+        <scene sceneID="oMd-AQ-p1c">
+            <objects>
+                <viewController title="검색" id="png-rm-98g" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u43-Do-IcZ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="daC-3a-qWS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="검색" id="OpT-yJ-jVM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lzC-xd-5Tc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2678" y="4182"/>
+        </scene>
+        <!--검색-->
+        <scene sceneID="Vux-sI-BFk">
+            <objects>
+                <navigationController id="UU8-EF-3Ne" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="검색" image="magnifyingglass" catalog="system" id="CHw-qx-2ra"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iLd-j3-6xa">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="png-rm-98g" kind="relationship" relationship="rootViewController" id="DLK-Y0-IV6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0hh-b4-aPf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2678" y="3417"/>
+        </scene>
+        <!--검색-->
+        <scene sceneID="VEa-8y-8QS">
+            <objects>
+                <viewController title="검색" id="6Dz-8z-3xI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="El1-qz-w0l">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="60r-Bf-lPk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="즐겨찾기" id="SoN-dy-3SG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxo-RG-q7d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1820" y="4182"/>
+        </scene>
+        <!--즐겨찾기-->
+        <scene sceneID="nmu-aM-o1h">
+            <objects>
+                <navigationController title="즐겨찾기" id="6Li-QI-nZj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="즐겨찾기" image="bookmark" catalog="system" id="IZ6-eJ-b9J"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zwe-zD-CGv">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6Dz-8z-3xI" kind="relationship" relationship="rootViewController" id="YH8-4r-kBj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ews-cy-9ku" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1820" y="3417"/>
+        </scene>
+        <!--마이페이지-->
+        <scene sceneID="hVz-Hl-yq6">
+            <objects>
+                <navigationController title="마이페이지" id="I6A-FF-QyT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="마이페이지" image="person" catalog="system" id="qVC-7F-hSl"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="39O-LR-5w1">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="C1a-Yq-bOF" kind="relationship" relationship="rootViewController" id="VPB-jQ-euQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qzg-SI-dF8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-920" y="3417"/>
+        </scene>
+        <!--검색-->
+        <scene sceneID="qHE-qN-ktS">
+            <objects>
+                <viewController title="검색" id="C1a-Yq-bOF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PwF-Pf-j4b">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="q3x-22-mg6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="마이페이지" id="S8L-Id-M1S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C48-gE-pIb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-920" y="4182"/>
+        </scene>
+        <!--Jobcafe-->
+        <scene sceneID="OIH-Ci-Cre">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Jobcafe" id="bxm-tu-KOx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="qlM-Li-Jq5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rWc-Ok-YY0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3790" y="2854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bell" catalog="system" width="125" height="128"/>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
