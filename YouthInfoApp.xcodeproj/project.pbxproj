@@ -17,7 +17,7 @@
 		A6A6D8AA2908C72F00BED70B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A6D8A82908C72F00BED70B /* LaunchScreen.storyboard */; };
 		A6C4AEEB291314B60001D1C8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C4AEEA291314B50001D1C8 /* MainViewController.swift */; };
 		A6D333D6290E709900E518D3 /* SmallLibraryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D333D5290E709900E518D3 /* SmallLibraryDetailViewController.swift */; };
-		A6D9655A2912B75300EEDD5F /* Jobcafe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D965592912B75300EEDD5F /* Jobcafe.storyboard */; };
+		A6D9655A2912B75300EEDD5F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D965592912B75300EEDD5F /* Home.storyboard */; };
 		A6F4EC97290A2BC600A63957 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F4EC96290A2BC600A63957 /* Info.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +34,7 @@
 		A6A6D8AB2908C72F00BED70B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6C4AEEA291314B50001D1C8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A6D333D5290E709900E518D3 /* SmallLibraryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallLibraryDetailViewController.swift; sourceTree = "<group>"; };
-		A6D965592912B75300EEDD5F /* Jobcafe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jobcafe.storyboard; sourceTree = "<group>"; };
+		A6D965592912B75300EEDD5F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A6F4EC96290A2BC600A63957 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				A6A6D8A32908C72D00BED70B /* Main.storyboard */,
-				A6D965592912B75300EEDD5F /* Jobcafe.storyboard */,
+				A6D965592912B75300EEDD5F /* Home.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 				A6A6D8AA2908C72F00BED70B /* LaunchScreen.storyboard in Resources */,
 				A6A6D8A72908C72F00BED70B /* Assets.xcassets in Resources */,
 				A6A6D8A52908C72D00BED70B /* Main.storyboard in Resources */,
-				A6D9655A2912B75300EEDD5F /* Jobcafe.storyboard in Resources */,
+				A6D9655A2912B75300EEDD5F /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
