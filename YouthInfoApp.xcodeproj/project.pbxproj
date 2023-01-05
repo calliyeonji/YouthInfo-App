@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82EA0F7F0FCB10DC74E7060C /* Pods_YouthInfoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D919FDC0BA7F4D5CA1B6883 /* Pods_YouthInfoApp.framework */; };
 		A6767D69290D22F200FFF046 /* SmallLibraryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6767D68290D22F200FFF046 /* SmallLibraryTableViewController.swift */; };
 		A6767D6B290D57C100FFF046 /* SmallLibraryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6767D6A290D57C100FFF046 /* SmallLibraryInfo.swift */; };
 		A69BFCCC290C59CC00EB6D31 /* JobcafeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69BFCCB290C59CC00EB6D31 /* JobcafeTableViewController.swift */; };
@@ -16,12 +17,20 @@
 		A6A6D8A72908C72F00BED70B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A6D8A62908C72F00BED70B /* Assets.xcassets */; };
 		A6A6D8AA2908C72F00BED70B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A6D8A82908C72F00BED70B /* LaunchScreen.storyboard */; };
 		A6C4AEEB291314B60001D1C8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C4AEEA291314B50001D1C8 /* MainViewController.swift */; };
+		A6CCEA9A295EEE660098C916 /* ImageSlideshow in Frameworks */ = {isa = PBXBuildFile; productRef = A6CCEA99295EEE660098C916 /* ImageSlideshow */; };
+		A6CCEA9C295EEE660098C916 /* ImageSlideshow/Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A6CCEA9B295EEE660098C916 /* ImageSlideshow/Alamofire */; };
+		A6CCEA9E295EEE660098C916 /* ImageSlideshow/Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A6CCEA9D295EEE660098C916 /* ImageSlideshow/Kingfisher */; };
+		A6CCEAA0295EEE660098C916 /* ImageSlideshow/SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A6CCEA9F295EEE660098C916 /* ImageSlideshow/SDWebImage */; };
+		A6CCEAA9295EFE990098C916 /* AFNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = A6CCEAA8295EFE990098C916 /* AFNetworking */; };
+		A6CCEAAF295EFF4D0098C916 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A6CCEAAE295EFF4D0098C916 /* Alamofire */; };
 		A6D333D6290E709900E518D3 /* SmallLibraryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D333D5290E709900E518D3 /* SmallLibraryDetailViewController.swift */; };
 		A6D9655A2912B75300EEDD5F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D965592912B75300EEDD5F /* Home.storyboard */; };
 		A6F4EC97290A2BC600A63957 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F4EC96290A2BC600A63957 /* Info.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		293C1D08883DBB6A7B795BF1 /* Pods-YouthInfoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouthInfoApp.debug.xcconfig"; path = "Target Support Files/Pods-YouthInfoApp/Pods-YouthInfoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2D919FDC0BA7F4D5CA1B6883 /* Pods_YouthInfoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouthInfoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6767D68290D22F200FFF046 /* SmallLibraryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallLibraryTableViewController.swift; sourceTree = "<group>"; };
 		A6767D6A290D57C100FFF046 /* SmallLibraryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallLibraryInfo.swift; sourceTree = "<group>"; };
 		A69BFCCB290C59CC00EB6D31 /* JobcafeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobcafeTableViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +41,7 @@
 		A6A6D8A62908C72F00BED70B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6A6D8A92908C72F00BED70B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6A6D8AB2908C72F00BED70B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6BA418E1F1910EE19439281 /* Pods-YouthInfoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouthInfoApp.release.xcconfig"; path = "Target Support Files/Pods-YouthInfoApp/Pods-YouthInfoApp.release.xcconfig"; sourceTree = "<group>"; };
 		A6C4AEEA291314B50001D1C8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A6D333D5290E709900E518D3 /* SmallLibraryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallLibraryDetailViewController.swift; sourceTree = "<group>"; };
 		A6D965592912B75300EEDD5F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -43,17 +53,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6CCEAAF295EFF4D0098C916 /* Alamofire in Frameworks */,
+				A6CCEA9C295EEE660098C916 /* ImageSlideshow/Alamofire in Frameworks */,
+				A6CCEAA9295EFE990098C916 /* AFNetworking in Frameworks */,
+				A6CCEAA0295EEE660098C916 /* ImageSlideshow/SDWebImage in Frameworks */,
+				A6CCEA9E295EEE660098C916 /* ImageSlideshow/Kingfisher in Frameworks */,
+				A6CCEA9A295EEE660098C916 /* ImageSlideshow in Frameworks */,
+				82EA0F7F0FCB10DC74E7060C /* Pods_YouthInfoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		069BC0CC6C0051666B2F3527 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D919FDC0BA7F4D5CA1B6883 /* Pods_YouthInfoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2EFC2227A55A71E60DA870D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				293C1D08883DBB6A7B795BF1 /* Pods-YouthInfoApp.debug.xcconfig */,
+				A6BA418E1F1910EE19439281 /* Pods-YouthInfoApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A6A6D8912908C72D00BED70B = {
 			isa = PBXGroup;
 			children = (
 				A6A6D89C2908C72D00BED70B /* YouthInfoApp */,
 				A6A6D89B2908C72D00BED70B /* Products */,
+				2EFC2227A55A71E60DA870D0 /* Pods */,
+				069BC0CC6C0051666B2F3527 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,15 +160,25 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6A6D8AE2908C72F00BED70B /* Build configuration list for PBXNativeTarget "YouthInfoApp" */;
 			buildPhases = (
+				B1D68C24ED6BF4E89B3EB898 /* [CP] Check Pods Manifest.lock */,
 				A6A6D8962908C72D00BED70B /* Sources */,
 				A6A6D8972908C72D00BED70B /* Frameworks */,
 				A6A6D8982908C72D00BED70B /* Resources */,
+				3BDF956AAEF4BD345DD7B7E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = YouthInfoApp;
+			packageProductDependencies = (
+				A6CCEA99295EEE660098C916 /* ImageSlideshow */,
+				A6CCEA9B295EEE660098C916 /* ImageSlideshow/Alamofire */,
+				A6CCEA9D295EEE660098C916 /* ImageSlideshow/Kingfisher */,
+				A6CCEA9F295EEE660098C916 /* ImageSlideshow/SDWebImage */,
+				A6CCEAA8295EFE990098C916 /* AFNetworking */,
+				A6CCEAAE295EFF4D0098C916 /* Alamofire */,
+			);
 			productName = YouthInfoApp;
 			productReference = A6A6D89A2908C72D00BED70B /* YouthInfoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -161,6 +207,11 @@
 				Base,
 			);
 			mainGroup = A6A6D8912908C72D00BED70B;
+			packageReferences = (
+				A6CCEA98295EEE660098C916 /* XCRemoteSwiftPackageReference "ImageSlideshow" */,
+				A6CCEAA7295EFE990098C916 /* XCRemoteSwiftPackageReference "AFNetworking" */,
+				A6CCEAAD295EFF4D0098C916 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = A6A6D89B2908C72D00BED70B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -183,6 +234,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BDF956AAEF4BD345DD7B7E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YouthInfoApp/Pods-YouthInfoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YouthInfoApp/Pods-YouthInfoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YouthInfoApp/Pods-YouthInfoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1D68C24ED6BF4E89B3EB898 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YouthInfoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6A6D8962908C72D00BED70B /* Sources */ = {
@@ -338,6 +431,7 @@
 		};
 		A6A6D8AF2908C72F00BED70B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 293C1D08883DBB6A7B795BF1 /* Pods-YouthInfoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -351,6 +445,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,6 +461,7 @@
 		};
 		A6A6D8B02908C72F00BED70B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6BA418E1F1910EE19439281 /* Pods-YouthInfoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -379,6 +475,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,6 +511,66 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A6CCEA98295EEE660098C916 /* XCRemoteSwiftPackageReference "ImageSlideshow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zvonicek/ImageSlideshow.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		A6CCEAA7295EFE990098C916 /* XCRemoteSwiftPackageReference "AFNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AFNetworking/AFNetworking";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A6CCEAAD295EFF4D0098C916 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A6CCEA99295EEE660098C916 /* ImageSlideshow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6CCEA98295EEE660098C916 /* XCRemoteSwiftPackageReference "ImageSlideshow" */;
+			productName = ImageSlideshow;
+		};
+		A6CCEA9B295EEE660098C916 /* ImageSlideshow/Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6CCEA98295EEE660098C916 /* XCRemoteSwiftPackageReference "ImageSlideshow" */;
+			productName = ImageSlideshow/Alamofire;
+		};
+		A6CCEA9D295EEE660098C916 /* ImageSlideshow/Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6CCEA98295EEE660098C916 /* XCRemoteSwiftPackageReference "ImageSlideshow" */;
+			productName = ImageSlideshow/Kingfisher;
+		};
+		A6CCEA9F295EEE660098C916 /* ImageSlideshow/SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6CCEA98295EEE660098C916 /* XCRemoteSwiftPackageReference "ImageSlideshow" */;
+			productName = ImageSlideshow/SDWebImage;
+		};
+		A6CCEAA8295EFE990098C916 /* AFNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6CCEAA7295EFE990098C916 /* XCRemoteSwiftPackageReference "AFNetworking" */;
+			productName = AFNetworking;
+		};
+		A6CCEAAE295EFF4D0098C916 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6CCEAAD295EFF4D0098C916 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A6A6D8922908C72D00BED70B /* Project object */;
 }

@@ -58,3 +58,5 @@ struct Info: Codable {
     let FILE_NM:String
     let CAFE_TYPE_NM:String
 }
+
+
