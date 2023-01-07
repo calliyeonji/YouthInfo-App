@@ -34,24 +34,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="취업" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKY-Wf-IuK">
-                                <rect key="frame" x="270" y="354" width="30" height="20.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="학업" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU5-pT-ed0">
-                                <rect key="frame" x="90" y="354.66666666666669" width="30" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKm-AC-pDx">
-                                <rect key="frame" x="21" y="391.66666666666669" width="86" height="66"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="취업" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKY-Wf-IuK">
+                                <rect key="frame" x="269" y="384" width="32" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="WiN-b7-Izh"/>
-                                    <constraint firstAttribute="width" constant="86" id="bdn-Xi-nj3"/>
+                                    <constraint firstAttribute="width" constant="32" id="rOJ-Nd-6YU"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="학업" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU5-pT-ed0">
+                                <rect key="frame" x="90" y="384" width="31" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="2IM-e4-swM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKm-AC-pDx">
+                                <rect key="frame" x="65" y="412" width="81" height="81"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="작은도서관" image="KakaoTalk_Photo_2022-11-01-22-20-01">
@@ -65,11 +67,19 @@
                                     <segue destination="b4J-im-F7T" kind="show" id="Fpf-Lr-sCh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QX3-ed-alU">
-                                <rect key="frame" x="101" y="391.66666666666669" width="93" height="61"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="93" id="Cfg-1y-0rb"/>
-                                </constraints>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="a0d-5s-6Hw">
+                                <rect key="frame" x="72" y="320" width="246" height="26"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="pageChanged:" destination="GgJ-6O-jRX" eventType="valueChanged" id="X3B-O4-Z6E"/>
+                                </connections>
+                            </pageControl>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NT4-QX-89S" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="18" y="91" width="354" height="260"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QX3-ed-alU">
+                                <rect key="frame" x="245" y="412" width="81" height="81"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="">
                                     <imageReference key="image" image="KakaoTalk_Photo_2022-11-01-20-11-42" symbolScale="large" renderingMode="hierarchical-single">
@@ -95,176 +105,31 @@
                                     <segue destination="lIx-Jg-DNN" kind="show" id="25g-A1-sFa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pif-kX-9Ji">
-                                <rect key="frame" x="191" y="389" width="86" height="66"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="작은도서관" image="KakaoTalk_Photo_2022-11-01-22-20-01">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <buttonConfiguration key="configuration" style="plain" image="smalllibrary" imagePlacement="top" title="작은도서관" imagePadding="4">
-                                    <fontDescription key="titleFontDescription" name="NanumGothic" family="Nanum Gothic" pointSize="13"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5K-js-lI9">
-                                <rect key="frame" x="274" y="389.66666666666669" width="93" height="61"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="61" id="dcf-Bs-cPy"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="">
-                                    <imageReference key="image" image="KakaoTalk_Photo_2022-11-01-20-11-42" symbolScale="large" renderingMode="hierarchical-single">
-                                        <hierarchicalColors>
-                                            <color systemColor="systemOrangeColor"/>
-                                            <color systemColor="secondaryLabelColor"/>
-                                            <color systemColor="tertiaryLabelColor"/>
-                                        </hierarchicalColors>
-                                    </imageReference>
-                                </state>
-                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="일자리카페" imagePadding="4">
-                                    <imageReference key="image" image="jobcafe" symbolScale="large" renderingMode="hierarchical-single">
-                                        <hierarchicalColors>
-                                            <color systemColor="systemOrangeColor"/>
-                                            <color systemColor="secondaryLabelColor"/>
-                                            <color systemColor="tertiaryLabelColor"/>
-                                        </hierarchicalColors>
-                                    </imageReference>
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYA-kN-Lm0">
-                                <rect key="frame" x="21" y="463" width="86" height="66"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="작은도서관" image="KakaoTalk_Photo_2022-11-01-22-20-01">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <buttonConfiguration key="configuration" style="plain" image="smalllibrary" imagePlacement="top" title="작은도서관" imagePadding="4">
-                                    <fontDescription key="titleFontDescription" name="NanumGothic" family="Nanum Gothic" pointSize="13"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbI-pa-lXM">
-                                <rect key="frame" x="191" y="460.66666666666669" width="86" height="66.333333333333314"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="작은도서관" image="KakaoTalk_Photo_2022-11-01-22-20-01">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <buttonConfiguration key="configuration" style="plain" image="smalllibrary" imagePlacement="top" title="작은도서관" imagePadding="4">
-                                    <fontDescription key="titleFontDescription" name="NanumGothic" family="Nanum Gothic" pointSize="13"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNh-Fv-V0R">
-                                <rect key="frame" x="274" y="460" width="93" height="61"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="">
-                                    <imageReference key="image" image="KakaoTalk_Photo_2022-11-01-20-11-42" symbolScale="large" renderingMode="hierarchical-single">
-                                        <hierarchicalColors>
-                                            <color systemColor="systemOrangeColor"/>
-                                            <color systemColor="secondaryLabelColor"/>
-                                            <color systemColor="tertiaryLabelColor"/>
-                                        </hierarchicalColors>
-                                    </imageReference>
-                                </state>
-                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="일자리카페" imagePadding="4">
-                                    <imageReference key="image" image="jobcafe" symbolScale="large" renderingMode="hierarchical-single">
-                                        <hierarchicalColors>
-                                            <color systemColor="systemOrangeColor"/>
-                                            <color systemColor="secondaryLabelColor"/>
-                                            <color systemColor="tertiaryLabelColor"/>
-                                        </hierarchicalColors>
-                                    </imageReference>
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uc5-ty-y8V">
-                                <rect key="frame" x="101" y="463.66666666666669" width="93" height="60.333333333333314"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="">
-                                    <imageReference key="image" image="KakaoTalk_Photo_2022-11-01-20-11-42" symbolScale="large" renderingMode="hierarchical-single">
-                                        <hierarchicalColors>
-                                            <color systemColor="systemOrangeColor"/>
-                                            <color systemColor="secondaryLabelColor"/>
-                                            <color systemColor="tertiaryLabelColor"/>
-                                        </hierarchicalColors>
-                                    </imageReference>
-                                </state>
-                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="일자리카페" imagePadding="4">
-                                    <imageReference key="image" image="jobcafe" symbolScale="large" renderingMode="hierarchical-single">
-                                        <hierarchicalColors>
-                                            <color systemColor="systemOrangeColor"/>
-                                            <color systemColor="secondaryLabelColor"/>
-                                            <color systemColor="tertiaryLabelColor"/>
-                                        </hierarchicalColors>
-                                    </imageReference>
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                            </button>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="a0d-5s-6Hw">
-                                <rect key="frame" x="72" y="320" width="246" height="26"/>
-                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <action selector="pageChanged:" destination="GgJ-6O-jRX" eventType="valueChanged" id="X3B-O4-Z6E"/>
-                                </connections>
-                            </pageControl>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NT4-QX-89S" customClass="ImageSlideshow" customModule="ImageSlideshow">
-                                <rect key="frame" x="18" y="91" width="354" height="260"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="260" id="aMq-9Y-iIq"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="C52-6v-iqt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="GbI-pa-lXM" firstAttribute="leading" secondItem="pif-kX-9Ji" secondAttribute="leading" id="0Km-lZ-Aaj"/>
-                            <constraint firstItem="QX3-ed-alU" firstAttribute="leading" secondItem="C52-6v-iqt" secondAttribute="leading" constant="101" id="1fK-K1-VcP"/>
-                            <constraint firstItem="QX3-ed-alU" firstAttribute="trailing" secondItem="Uc5-ty-y8V" secondAttribute="trailing" id="31a-5M-kr1"/>
-                            <constraint firstItem="pYA-kN-Lm0" firstAttribute="top" secondItem="QX3-ed-alU" secondAttribute="bottom" constant="11" id="559-56-ZWw"/>
-                            <constraint firstItem="NT4-QX-89S" firstAttribute="centerX" secondItem="Li3-pk-zrW" secondAttribute="centerX" id="69D-bd-bZR"/>
-                            <constraint firstItem="QX3-ed-alU" firstAttribute="leading" secondItem="Uc5-ty-y8V" secondAttribute="leading" id="7rS-uY-EzS"/>
-                            <constraint firstItem="a0d-5s-6Hw" firstAttribute="leading" secondItem="C52-6v-iqt" secondAttribute="leading" constant="72" id="9Pc-u8-0Fg"/>
-                            <constraint firstItem="QX3-ed-alU" firstAttribute="centerY" secondItem="Li3-pk-zrW" secondAttribute="centerY" id="9sx-Ij-0h7"/>
-                            <constraint firstItem="pKm-AC-pDx" firstAttribute="leading" secondItem="pYA-kN-Lm0" secondAttribute="leading" id="AXb-sb-et7"/>
-                            <constraint firstItem="pYA-kN-Lm0" firstAttribute="top" secondItem="pKm-AC-pDx" secondAttribute="bottom" constant="6" id="BXf-w1-obT"/>
-                            <constraint firstItem="NT4-QX-89S" firstAttribute="centerX" secondItem="a0d-5s-6Hw" secondAttribute="centerX" id="EeT-Y7-pIq"/>
-                            <constraint firstItem="pKm-AC-pDx" firstAttribute="top" secondItem="uU5-pT-ed0" secondAttribute="bottom" constant="17" id="GVD-ZQ-UsB"/>
-                            <constraint firstItem="uU5-pT-ed0" firstAttribute="leading" secondItem="C52-6v-iqt" secondAttribute="leading" constant="90" id="KN7-fk-5rq"/>
-                            <constraint firstItem="NT4-QX-89S" firstAttribute="top" secondItem="C52-6v-iqt" secondAttribute="top" id="KRt-zn-CuT"/>
-                            <constraint firstItem="pif-kX-9Ji" firstAttribute="leading" secondItem="pKm-AC-pDx" secondAttribute="trailing" constant="84" id="L5L-jb-K4i"/>
-                            <constraint firstItem="NKY-Wf-IuK" firstAttribute="top" secondItem="NT4-QX-89S" secondAttribute="bottom" constant="3" id="M9k-gR-Zkw"/>
-                            <constraint firstItem="w5K-js-lI9" firstAttribute="leading" secondItem="QX3-ed-alU" secondAttribute="trailing" constant="80" id="S9H-8d-lcx"/>
-                            <constraint firstItem="C52-6v-iqt" firstAttribute="trailing" secondItem="w5K-js-lI9" secondAttribute="trailing" constant="23" id="WXc-8K-GAT"/>
-                            <constraint firstItem="w5K-js-lI9" firstAttribute="trailing" secondItem="lNh-Fv-V0R" secondAttribute="trailing" id="Xd9-51-M3R"/>
-                            <constraint firstItem="pif-kX-9Ji" firstAttribute="top" secondItem="NKY-Wf-IuK" secondAttribute="bottom" constant="15" id="ZlC-M0-FOz"/>
-                            <constraint firstItem="w5K-js-lI9" firstAttribute="leading" secondItem="lNh-Fv-V0R" secondAttribute="leading" id="Ztw-aT-29n"/>
-                            <constraint firstItem="pKm-AC-pDx" firstAttribute="leading" secondItem="C52-6v-iqt" secondAttribute="leading" constant="21" id="bdy-5Q-PHi"/>
-                            <constraint firstItem="C52-6v-iqt" firstAttribute="trailing" secondItem="NKY-Wf-IuK" secondAttribute="trailing" constant="90" id="bye-xk-1yY"/>
-                            <constraint firstItem="w5K-js-lI9" firstAttribute="top" secondItem="pif-kX-9Ji" secondAttribute="top" id="cKT-Cz-y8i"/>
-                            <constraint firstItem="GbI-pa-lXM" firstAttribute="top" secondItem="lNh-Fv-V0R" secondAttribute="top" id="eIv-QG-uND"/>
-                            <constraint firstItem="pKm-AC-pDx" firstAttribute="trailing" secondItem="pYA-kN-Lm0" secondAttribute="trailing" id="g5Q-Gl-Ma8"/>
-                            <constraint firstItem="Uc5-ty-y8V" firstAttribute="centerY" secondItem="GbI-pa-lXM" secondAttribute="centerY" id="ixA-IA-07Y"/>
-                            <constraint firstItem="pKm-AC-pDx" firstAttribute="top" secondItem="QX3-ed-alU" secondAttribute="top" id="jKQ-8h-lTP"/>
-                            <constraint firstItem="C52-6v-iqt" firstAttribute="bottom" secondItem="Uc5-ty-y8V" secondAttribute="bottom" constant="237" id="kOQ-gI-gkU"/>
-                            <constraint firstItem="a0d-5s-6Hw" firstAttribute="top" secondItem="C52-6v-iqt" secondAttribute="top" constant="229" id="nEC-QB-pDp"/>
-                            <constraint firstItem="lNh-Fv-V0R" firstAttribute="top" secondItem="w5K-js-lI9" secondAttribute="bottom" constant="10" id="nyC-hV-7dZ"/>
-                            <constraint firstItem="NKY-Wf-IuK" firstAttribute="baseline" secondItem="uU5-pT-ed0" secondAttribute="baseline" id="qgI-Qr-PZX"/>
-                            <constraint firstItem="Uc5-ty-y8V" firstAttribute="top" secondItem="pYA-kN-Lm0" secondAttribute="top" id="rvr-FW-SOR"/>
-                            <constraint firstItem="NT4-QX-89S" firstAttribute="leading" secondItem="C52-6v-iqt" secondAttribute="leading" constant="18" id="udA-dG-77Q"/>
-                            <constraint firstItem="QX3-ed-alU" firstAttribute="centerY" secondItem="pif-kX-9Ji" secondAttribute="centerY" id="wv4-r3-eY4"/>
-                            <constraint firstItem="C52-6v-iqt" firstAttribute="trailing" secondItem="GbI-pa-lXM" secondAttribute="trailing" constant="113" id="xsr-Zg-By5"/>
-                            <constraint firstItem="GbI-pa-lXM" firstAttribute="trailing" secondItem="pif-kX-9Ji" secondAttribute="trailing" id="y2s-dB-Asc"/>
+                            <constraint firstItem="a0d-5s-6Hw" firstAttribute="top" secondItem="C52-6v-iqt" secondAttribute="top" constant="229" id="85E-q6-CSs"/>
+                            <constraint firstItem="NKY-Wf-IuK" firstAttribute="top" secondItem="a0d-5s-6Hw" secondAttribute="bottom" constant="38" id="C2J-M2-7kI"/>
+                            <constraint firstItem="uU5-pT-ed0" firstAttribute="leading" secondItem="C52-6v-iqt" secondAttribute="leading" constant="90" id="IfA-a4-eo0"/>
+                            <constraint firstItem="pKm-AC-pDx" firstAttribute="baseline" secondItem="QX3-ed-alU" secondAttribute="baseline" id="Le5-yq-aWq"/>
+                            <constraint firstItem="NT4-QX-89S" firstAttribute="leading" secondItem="C52-6v-iqt" secondAttribute="leading" constant="18" id="NnK-80-JMb"/>
+                            <constraint firstItem="NT4-QX-89S" firstAttribute="top" secondItem="C52-6v-iqt" secondAttribute="top" id="PYI-xb-xVO"/>
+                            <constraint firstItem="C52-6v-iqt" firstAttribute="trailing" secondItem="NKY-Wf-IuK" secondAttribute="trailing" constant="89" id="WUD-yl-zgI"/>
+                            <constraint firstItem="uU5-pT-ed0" firstAttribute="centerX" secondItem="pKm-AC-pDx" secondAttribute="centerX" id="cJl-5b-wq5"/>
+                            <constraint firstItem="uU5-pT-ed0" firstAttribute="baseline" secondItem="NKY-Wf-IuK" secondAttribute="baseline" id="geL-O4-I4z"/>
+                            <constraint firstItem="QX3-ed-alU" firstAttribute="leading" secondItem="pKm-AC-pDx" secondAttribute="trailing" constant="99" id="ggu-Hu-Xo5"/>
+                            <constraint firstItem="NT4-QX-89S" firstAttribute="centerX" secondItem="Li3-pk-zrW" secondAttribute="centerX" id="id2-cI-ZcR"/>
+                            <constraint firstItem="a0d-5s-6Hw" firstAttribute="leading" secondItem="C52-6v-iqt" secondAttribute="leading" constant="72" id="irF-KK-Juz"/>
+                            <constraint firstItem="pKm-AC-pDx" firstAttribute="top" secondItem="uU5-pT-ed0" secondAttribute="bottom" constant="8" id="kgT-v3-pGm"/>
+                            <constraint firstItem="NKY-Wf-IuK" firstAttribute="centerX" secondItem="QX3-ed-alU" secondAttribute="centerX" id="qdf-2n-Ck1"/>
+                            <constraint firstItem="NT4-QX-89S" firstAttribute="centerX" secondItem="a0d-5s-6Hw" secondAttribute="centerX" id="ssT-eD-O46"/>
+                            <constraint firstItem="uU5-pT-ed0" firstAttribute="top" secondItem="NT4-QX-89S" secondAttribute="bottom" constant="33" id="swa-q2-M7d"/>
+                            <constraint firstItem="pKm-AC-pDx" firstAttribute="leading" secondItem="C52-6v-iqt" secondAttribute="leading" constant="65" id="y6S-wC-Yh7"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="jYs-fR-IAO"/>
-                    <navigationItem key="navigationItem" title="청바지션" id="HzZ-vS-3Dz"/>
+                    <navigationItem key="navigationItem" id="HzZ-vS-3Dz"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="pageControl" destination="a0d-5s-6Hw" id="uyl-Yh-0vp"/>
@@ -518,8 +383,8 @@
         <image name="arrow.right" catalog="system" width="128" height="95"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="house" catalog="system" width="128" height="104"/>
-        <image name="jobcafe" width="55" height="51"/>
-        <image name="smalllibrary" width="55" height="48"/>
+        <image name="jobcafe" width="55" height="56.333332061767578"/>
+        <image name="smalllibrary" width="55" height="56.333332061767578"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
