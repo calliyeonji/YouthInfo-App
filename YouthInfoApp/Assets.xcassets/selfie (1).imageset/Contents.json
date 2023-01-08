@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "getImage.png",
+      "filename" : "selfie (2).png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "getImage 1.png",
+      "filename" : "selfie (2) 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "getImage 2.png",
+      "filename" : "selfie (2) 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

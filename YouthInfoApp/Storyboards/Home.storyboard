@@ -34,26 +34,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="취업" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKY-Wf-IuK">
-                                <rect key="frame" x="267" y="357" width="32" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="학업" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU5-pT-ed0">
+                                <rect key="frame" x="106" y="300" width="31" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="32" id="jbI-Xo-fAy"/>
+                                    <constraint firstAttribute="width" constant="31" id="rnD-2C-Tya"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="학업" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU5-pT-ed0">
-                                <rect key="frame" x="88" y="357" width="31" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="31" id="knp-eb-SyL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKm-AC-pDx">
-                                <rect key="frame" x="63" y="389" width="81" height="99"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKm-AC-pDx">
+                                <rect key="frame" x="81" y="328" width="81" height="89"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="작은도서관" image="KakaoTalk_Photo_2022-11-01-22-20-01">
@@ -67,8 +58,11 @@
                                     <segue destination="b4J-im-F7T" kind="show" id="Fpf-Lr-sCh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QX3-ed-alU">
-                                <rect key="frame" x="242" y="394" width="82" height="90"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QX3-ed-alU">
+                                <rect key="frame" x="229" y="332" width="81" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="AMs-Rd-4Qc"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="">
                                     <imageReference key="image" image="KakaoTalk_Photo_2022-11-01-20-11-42" symbolScale="large" renderingMode="hierarchical-single">
@@ -95,27 +89,35 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t06-r7-tsD" userLabel="Slideshow" customClass="ImageSlideshow" customModule="ImageSlideshow">
-                                <rect key="frame" x="18" y="72" width="354" height="260"/>
+                                <rect key="frame" x="15" y="74" width="360" height="218"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="260" id="aE6-U9-UWk"/>
-                                </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="취업" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKY-Wf-IuK">
+                                <rect key="frame" x="253" y="300" width="32" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="v38-DB-Bxp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="C52-6v-iqt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="uU5-pT-ed0" firstAttribute="centerX" secondItem="pKm-AC-pDx" secondAttribute="centerX" id="7w9-ZC-luJ"/>
-                            <constraint firstItem="uU5-pT-ed0" firstAttribute="leading" secondItem="C52-6v-iqt" secondAttribute="leading" constant="90" id="Mn5-8M-iY3"/>
-                            <constraint firstItem="QX3-ed-alU" firstAttribute="top" secondItem="NKY-Wf-IuK" secondAttribute="bottom" constant="17" id="Nz2-Uy-dZd"/>
-                            <constraint firstItem="NKY-Wf-IuK" firstAttribute="top" secondItem="Li3-pk-zrW" secondAttribute="top" constant="375" id="aFI-WY-8Gi"/>
-                            <constraint firstItem="t06-r7-tsD" firstAttribute="leading" secondItem="C52-6v-iqt" secondAttribute="leading" constant="18" id="dI9-cs-6h5"/>
-                            <constraint firstItem="NKY-Wf-IuK" firstAttribute="centerX" secondItem="QX3-ed-alU" secondAttribute="centerX" id="fPK-iD-YPW"/>
-                            <constraint firstItem="t06-r7-tsD" firstAttribute="centerX" secondItem="Li3-pk-zrW" secondAttribute="centerX" id="fmt-zq-497"/>
-                            <constraint firstItem="C52-6v-iqt" firstAttribute="trailing" secondItem="NKY-Wf-IuK" secondAttribute="trailing" constant="89" id="hg9-bh-eR0"/>
-                            <constraint firstItem="NKY-Wf-IuK" firstAttribute="top" secondItem="t06-r7-tsD" secondAttribute="bottom" constant="43" id="ipm-cN-BMw"/>
-                            <constraint firstItem="NKY-Wf-IuK" firstAttribute="baseline" secondItem="uU5-pT-ed0" secondAttribute="baseline" id="ob8-ny-Gjt"/>
-                            <constraint firstItem="pKm-AC-pDx" firstAttribute="top" secondItem="uU5-pT-ed0" secondAttribute="bottom" constant="12" id="rrf-rE-U2Z"/>
+                            <constraint firstItem="uU5-pT-ed0" firstAttribute="top" secondItem="Li3-pk-zrW" secondAttribute="top" constant="300" id="AT0-7n-HuZ"/>
+                            <constraint firstItem="uU5-pT-ed0" firstAttribute="top" secondItem="t06-r7-tsD" secondAttribute="bottom" constant="8" id="BK9-gy-Yyo"/>
+                            <constraint firstItem="t06-r7-tsD" firstAttribute="top" secondItem="Li3-pk-zrW" secondAttribute="topMargin" constant="-17" id="BVe-Cz-gvL"/>
+                            <constraint firstItem="QX3-ed-alU" firstAttribute="leading" secondItem="pKm-AC-pDx" secondAttribute="trailing" constant="67" id="LRu-9z-Sxg"/>
+                            <constraint firstItem="C52-6v-iqt" firstAttribute="bottom" secondItem="pKm-AC-pDx" secondAttribute="bottom" constant="344" id="Nae-FW-j5g"/>
+                            <constraint firstItem="pKm-AC-pDx" firstAttribute="centerX" secondItem="uU5-pT-ed0" secondAttribute="centerX" id="Orj-BA-UET"/>
+                            <constraint firstItem="uU5-pT-ed0" firstAttribute="baseline" secondItem="NKY-Wf-IuK" secondAttribute="baseline" id="SEs-LH-Rkc"/>
+                            <constraint firstItem="C52-6v-iqt" firstAttribute="bottom" secondItem="QX3-ed-alU" secondAttribute="bottom" constant="348" id="UBd-Dj-kzt"/>
+                            <constraint firstItem="t06-r7-tsD" firstAttribute="centerX" secondItem="Li3-pk-zrW" secondAttribute="centerX" id="WrC-LO-xbH"/>
+                            <constraint firstItem="uU5-pT-ed0" firstAttribute="leading" secondItem="C52-6v-iqt" secondAttribute="leading" constant="106" id="YjR-kg-BxN"/>
+                            <constraint firstItem="QX3-ed-alU" firstAttribute="centerY" secondItem="pKm-AC-pDx" secondAttribute="centerY" id="Ynv-c3-2vQ"/>
+                            <constraint firstItem="C52-6v-iqt" firstAttribute="trailing" secondItem="NKY-Wf-IuK" secondAttribute="trailing" constant="105" id="bcx-4W-neW"/>
+                            <constraint firstItem="t06-r7-tsD" firstAttribute="leading" secondItem="C52-6v-iqt" secondAttribute="leading" constant="15" id="ckp-An-ilM"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="jYs-fR-IAO"/>
