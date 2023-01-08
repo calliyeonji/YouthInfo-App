@@ -18,9 +18,6 @@ class MainViewController: UIViewController {
         return .portrait
     }
     
-
-    @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet weak var pageControl: UIPageControl!
     //slideshow
     @IBOutlet weak var slideshow: ImageSlideshow!
     
