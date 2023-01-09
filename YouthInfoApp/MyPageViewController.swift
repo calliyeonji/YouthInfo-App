@@ -53,7 +53,7 @@ extension MyPageViewController:UITableViewDataSource, UITableViewDelegate{
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 5
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
@@ -62,9 +62,9 @@ extension MyPageViewController:UITableViewDataSource, UITableViewDelegate{
         
         switch indexPath.row{
         case 0:
-            symbol?.image = UIImage(systemName: "star")
+            symbol?.image = UIImage(systemName: "staroflife.fill")
             symbol?.tintColor = .label
-            label?.text = "즐겨찾기"
+            label?.text = "공지사항"
             
             //        case 1:
             //            symbol?.image = UIImage(systemName: "heart")
@@ -72,11 +72,26 @@ extension MyPageViewController:UITableViewDataSource, UITableViewDelegate{
             //            label?.text = "관심목록"
             
         case 1:
-            symbol?.image = UIImage(systemName: "questionmark.circle")
+            symbol?.image = UIImage(systemName: "star.fill")
             symbol?.tintColor = .label
-            label?.text = "고객센터"
+            label?.text = "이벤트"
+            
+//        case 2:
+//            symbol?.image = UIImage(systemName: "star")
+//            symbol?.tintColor = .label
+//            label?.text = "최근 본 소식"
             
         case 2:
+            symbol?.image = UIImage(systemName: "heart.fill")
+            symbol?.tintColor = .label
+            label?.text = "관심소식"
+            
+        case 3:
+            symbol?.image = UIImage(systemName: "questionmark.circle")
+            symbol?.tintColor = .label
+            label?.text = "자주 묻는 질문"
+            
+        case 4:
             symbol?.image = UIImage(systemName: "ipad.and.arrow.forward")
             symbol?.tintColor = .label
             label?.text = "로그아웃"
