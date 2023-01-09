@@ -13,6 +13,11 @@ import ImageSlideshow
 
 class MainViewController: UIViewController {
     
+    // 빈 화면 터치 시 키보드 내려가기
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        self.view.endEditing(true)
+    }
+    
     //slideshow
     open override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
@@ -34,23 +39,23 @@ class MainViewController: UIViewController {
 
         //slideshow
         slideshow.slideshowInterval = 5.0
-        slideshow.pageIndicatorPosition = .init(horizontal: .center, vertical: .under)
+//        slideshow.pageIndicatorPosition = .init(horizontal: .center, vertical: .under)
         slideshow.contentScaleMode = UIViewContentMode.scaleAspectFill
         
-        let pageIndicator = UIPageControl()
-        pageIndicator.currentPageIndicatorTintColor = UIColor.lightGray
-        pageIndicator.pageIndicatorTintColor = UIColor.black
-        slideshow.pageIndicator = pageIndicator
+//        let pageIndicator = UIPageControl()
+//        pageIndicator.currentPageIndicatorTintColor = UIColor.lightGray
+//        pageIndicator.pageIndicatorTintColor = UIColor.black
+//        slideshow.pageIndicator = pageIndicator
         
         // optional way to show activity indicator during image load (skipping the line will show no activity indicator)
-        slideshow.activityIndicator = DefaultActivityIndicator()
-        slideshow.delegate = self
+//        slideshow.activityIndicator = DefaultActivityIndicator()
+//        slideshow.delegate = self
         
         // can be used with other sample sources as `afNetworkingSource`, `alamofireSource` or `sdWebImageSource` or `kingfisherSource`
         slideshow.setImageInputs(localSource)
         
-        let recognizer = UITapGestureRecognizer(target: self, action: #selector(MainViewController.didTap))
-        slideshow.addGestureRecognizer(recognizer)
+//        let recognizer = UITapGestureRecognizer(target: self, action: #selector(MainViewController.didTap))
+//        slideshow.addGestureRecognizer(recognizer)
         //slideshow end
 
         // Do any additional setup after loading the view.
@@ -67,11 +72,12 @@ class MainViewController: UIViewController {
     }
     
     //slideshow
-    @objc func didTap() {
-        let fullScreenController = slideshow.presentFullScreenController(from: self)
-        // set the activity indicator for full screen controller (skipping the line will show no activity indicator)
-        fullScreenController.slideshow.activityIndicator = DefaultActivityIndicator(style: .white, color: nil)
-    }
+//    @objc func didTap() {
+//        let fullScreenController = slideshow.presentFullScreenController(from: self)
+//        // set the activity indicator for full screen controller (skipping the line will show no activity indicator)
+//        fullScreenController.slideshow.activityIndicator = DefaultActivityIndicator(style: .white, color: nil)
+//        print("didTap")
+//    }
     // 페이지가 변하면 호출됨
 //    @IBAction func pageChanged(_ sender: Any) {
 //        // images라는 배열에서 pageControl이 가르키는 현재 페이지에 해당하는 이미지를 imgView에 할당
@@ -92,6 +98,6 @@ class MainViewController: UIViewController {
 
 extension MainViewController: ImageSlideshowDelegate {
     func imageSlideshow(_ imageSlideshow: ImageSlideshow, didChangeCurrentPageTo page: Int) {
-        print("current page:", page)
+//        print("current page:", page)
     }
 }
