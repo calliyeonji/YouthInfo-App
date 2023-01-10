@@ -60,26 +60,16 @@ extension MyPageViewController:UITableViewDataSource, UITableViewDelegate{
         let symbol = cell.viewWithTag(1) as? UIImageView
         let label = cell.viewWithTag(2) as? UILabel
         
-        switch indexPath.row{
+        switch indexPath.row {
         case 0:
             symbol?.image = UIImage(systemName: "staroflife.fill")
             symbol?.tintColor = .label
             label?.text = "공지사항"
             
-            //        case 1:
-            //            symbol?.image = UIImage(systemName: "heart")
-            //            symbol?.tintColor = .label
-            //            label?.text = "관심목록"
-            
         case 1:
             symbol?.image = UIImage(systemName: "star.fill")
             symbol?.tintColor = .label
             label?.text = "이벤트"
-            
-//        case 2:
-//            symbol?.image = UIImage(systemName: "star")
-//            symbol?.tintColor = .label
-//            label?.text = "최근 본 소식"
             
         case 2:
             symbol?.image = UIImage(systemName: "heart.fill")
