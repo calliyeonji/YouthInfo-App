@@ -38,8 +38,18 @@
                                 <rect key="frame" x="15" y="43" width="360" height="190"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="궁금한 내용을 검색 해보세요." translatesAutoresizingMaskIntoConstraints="NO" id="61z-bt-5FV">
+                                <rect key="frame" x="15" y="245" width="360" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="IU8-I2-pHY"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="GgJ-6O-jRX" id="AIN-Mm-kTn"/>
+                                </connections>
+                            </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKm-AC-pDx">
-                                <rect key="frame" x="14" y="301" width="81" height="73.666666666666686"/>
+                                <rect key="frame" x="14" y="301" width="81" height="74.666666666666686"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="작은도서관" image="KakaoTalk_Photo_2022-11-01-22-20-01">
@@ -134,35 +144,135 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="궁금한 내용을 검색 해보세요." translatesAutoresizingMaskIntoConstraints="NO" id="61z-bt-5FV">
-                                <rect key="frame" x="15" y="245" width="360" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1y-wK-QmA">
+                                <rect key="frame" x="15" y="383" width="81" height="73.666666666666686"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="IU8-I2-pHY"/>
+                                    <constraint firstAttribute="width" constant="81" id="Dqx-y4-g6y"/>
                                 </constraints>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="GgJ-6O-jRX" id="AIN-Mm-kTn"/>
-                                </connections>
-                            </searchBar>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="작은도서관" image="KakaoTalk_Photo_2022-11-01-22-20-01">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" image="menu_ico5" imagePlacement="top" title="청년소식" imagePadding="5">
+                                    <fontDescription key="titleFontDescription" name="NanumGothic" family="Nanum Gothic" pointSize="13"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afz-K8-ODC">
+                                <rect key="frame" x="108" y="383" width="81" height="73.666666666666686"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="4Hx-N6-4Gm"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="">
+                                    <imageReference key="image" image="KakaoTalk_Photo_2022-11-01-20-11-42" symbolScale="large" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color systemColor="systemOrangeColor"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="청년공간" imagePadding="5">
+                                    <imageReference key="image" image="menu_ico6" symbolScale="large" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color systemColor="systemOrangeColor"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xZ-Ry-On2">
+                                <rect key="frame" x="201" y="383" width="81" height="73.666666666666686"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="mfo-s4-NJm"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="">
+                                    <imageReference key="image" image="KakaoTalk_Photo_2022-11-01-20-11-42" symbolScale="large" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color systemColor="systemOrangeColor"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="청년상담실" imagePadding="5">
+                                    <imageReference key="image" image="menu_ico7" symbolScale="large" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color systemColor="systemOrangeColor"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KK0-Q1-c83">
+                                <rect key="frame" x="294" y="383" width="81" height="73.666666666666686"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73.666666666666657" id="TWr-Sf-QvK"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="">
+                                    <imageReference key="image" image="KakaoTalk_Photo_2022-11-01-20-11-42" symbolScale="large" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color systemColor="systemOrangeColor"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="청년꿀팁" imagePadding="5">
+                                    <imageReference key="image" image="menu_ico8" symbolScale="large" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color systemColor="systemOrangeColor"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="C52-6v-iqt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="9xZ-Ry-On2" firstAttribute="leading" secondItem="Afz-K8-ODC" secondAttribute="trailing" constant="12" id="1f5-RS-UbC"/>
+                            <constraint firstItem="KK0-Q1-c83" firstAttribute="centerY" secondItem="a1y-wK-QmA" secondAttribute="centerY" id="2dT-iQ-fH1"/>
                             <constraint firstItem="t06-r7-tsD" firstAttribute="leading" secondItem="C52-6v-iqt" secondAttribute="leading" constant="15" id="2rU-IW-ONs"/>
                             <constraint firstItem="bXV-qa-Rgq" firstAttribute="trailing" secondItem="Li3-pk-zrW" secondAttribute="trailingMargin" id="5B5-wR-mRh"/>
+                            <constraint firstItem="Afz-K8-ODC" firstAttribute="leading" secondItem="a1y-wK-QmA" secondAttribute="trailing" constant="12" id="8IR-3D-9RP"/>
                             <constraint firstItem="61z-bt-5FV" firstAttribute="top" secondItem="Li3-pk-zrW" secondAttribute="top" constant="245" id="FHR-Ep-mzp"/>
                             <constraint firstItem="pKm-AC-pDx" firstAttribute="top" secondItem="61z-bt-5FV" secondAttribute="bottom" constant="12" id="JZX-eu-nKg"/>
+                            <constraint firstItem="KK0-Q1-c83" firstAttribute="baseline" secondItem="9xZ-Ry-On2" secondAttribute="baseline" id="OGg-Ci-bFA"/>
                             <constraint firstItem="58E-ir-keu" firstAttribute="baseline" secondItem="bXV-qa-Rgq" secondAttribute="baseline" id="Qgm-8f-Nvh"/>
                             <constraint firstItem="bXV-qa-Rgq" firstAttribute="leading" secondItem="58E-ir-keu" secondAttribute="trailing" constant="12" id="Qyp-HO-6VE"/>
+                            <constraint firstItem="KK0-Q1-c83" firstAttribute="trailing" secondItem="61z-bt-5FV" secondAttribute="trailing" id="Y3d-L7-Qyt"/>
                             <constraint firstItem="61z-bt-5FV" firstAttribute="leading" secondItem="t06-r7-tsD" secondAttribute="leading" id="YNp-iA-0LO"/>
+                            <constraint firstItem="Afz-K8-ODC" firstAttribute="baseline" secondItem="9xZ-Ry-On2" secondAttribute="baseline" id="ZPu-sd-5iB"/>
                             <constraint firstItem="QX3-ed-alU" firstAttribute="leading" secondItem="pKm-AC-pDx" secondAttribute="trailing" constant="12" id="baw-j0-PXb"/>
                             <constraint firstItem="61z-bt-5FV" firstAttribute="trailing" secondItem="t06-r7-tsD" secondAttribute="trailing" id="dHu-1Q-4dt"/>
                             <constraint firstItem="t06-r7-tsD" firstAttribute="top" secondItem="Li3-pk-zrW" secondAttribute="topMargin" constant="-48" id="eTu-ol-4fh"/>
                             <constraint firstItem="58E-ir-keu" firstAttribute="leading" secondItem="QX3-ed-alU" secondAttribute="trailing" constant="12" id="fYy-nk-1rl"/>
+                            <constraint firstItem="KK0-Q1-c83" firstAttribute="leading" secondItem="9xZ-Ry-On2" secondAttribute="trailing" constant="12" id="fZQ-FO-UVG"/>
+                            <constraint firstItem="C52-6v-iqt" firstAttribute="bottom" secondItem="KK0-Q1-c83" secondAttribute="bottom" constant="304.33333333333337" id="iMn-zn-OYY"/>
                             <constraint firstItem="pKm-AC-pDx" firstAttribute="leading" secondItem="C52-6v-iqt" secondAttribute="leading" constant="14" id="pFL-Ja-tkU"/>
+                            <constraint firstItem="a1y-wK-QmA" firstAttribute="leading" secondItem="61z-bt-5FV" secondAttribute="leading" id="pke-bk-Rrq"/>
                             <constraint firstItem="61z-bt-5FV" firstAttribute="top" secondItem="t06-r7-tsD" secondAttribute="bottom" constant="12" id="rgA-GE-Oaa"/>
+                            <constraint firstItem="a1y-wK-QmA" firstAttribute="top" secondItem="pKm-AC-pDx" secondAttribute="bottom" constant="7.3333333333333144" id="tzv-3m-9tZ"/>
+                            <constraint firstItem="KK0-Q1-c83" firstAttribute="firstBaseline" secondItem="Afz-K8-ODC" secondAttribute="firstBaseline" id="u1O-Zt-Bmf"/>
                             <constraint firstItem="QX3-ed-alU" firstAttribute="baseline" secondItem="58E-ir-keu" secondAttribute="baseline" id="vOQ-uk-KoO"/>
+                            <constraint firstItem="Afz-K8-ODC" firstAttribute="top" secondItem="QX3-ed-alU" secondAttribute="bottom" constant="7.3333333333333144" id="wTY-KJ-seg"/>
+                            <constraint firstItem="KK0-Q1-c83" firstAttribute="top" secondItem="bXV-qa-Rgq" secondAttribute="bottom" constant="7.3333333333333144" id="wiL-AD-V9O"/>
                             <constraint firstItem="C52-6v-iqt" firstAttribute="bottom" secondItem="QX3-ed-alU" secondAttribute="bottom" constant="385.33333333333331" id="wjF-Hd-H2b"/>
+                            <constraint firstItem="KK0-Q1-c83" firstAttribute="firstBaseline" secondItem="9xZ-Ry-On2" secondAttribute="firstBaseline" id="wo3-91-p09"/>
                             <constraint firstItem="t06-r7-tsD" firstAttribute="centerX" secondItem="Li3-pk-zrW" secondAttribute="centerX" id="yXu-xM-qIh"/>
                         </constraints>
                     </view>
@@ -424,6 +534,10 @@
         <image name="menu_ico2" width="40" height="40"/>
         <image name="menu_ico3" width="40" height="40"/>
         <image name="menu_ico4" width="40" height="40"/>
+        <image name="menu_ico5" width="40" height="40"/>
+        <image name="menu_ico6" width="40" height="40"/>
+        <image name="menu_ico7" width="40" height="40"/>
+        <image name="menu_ico8" width="40" height="40"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

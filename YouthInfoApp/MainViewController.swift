@@ -11,7 +11,24 @@ import ImageSlideshow
 // 화면에 보여줄 이미지 파일 이름을 images 배열에 저장
 //var images = [ "mainbanner01.png", "mainbanner02.png" ]
 
+
 class MainViewController: UIViewController {
+    
+    
+    func setSearchControllerUI() {
+        
+        let searchController = UISearchController(searchResultsController: nil)
+        
+        // set placeholder
+        let placeholder = "검색창입니다"
+        searchController.searchBar.placeholder = placeholder
+        // searchController가 검색하는 동안 네비게이션에 가려지지 않도록
+        searchController.hidesNavigationBarDuringPresentation = false
+        // searchBar cancel button text change (cancel을 취소로 텍스트 변경)
+//        searchController.searchBar.setValue("취소", forKey: "cancelButtonText")
+      
+    }
+    
     
     // 빈 화면 터치 시 키보드 내려가기
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
@@ -28,10 +45,8 @@ class MainViewController: UIViewController {
     
     //slideshow
     let localSource = [BundleImageSource(imageString: "img1"), BundleImageSource(imageString: "img2"), BundleImageSource(imageString: "img3"), BundleImageSource(imageString: "img4")]
-//    let afNetworkingSource = [AFURLSource(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")!, AFURLSource(urlString: "https://images.unsplash.com/photo-1447746249824-4be4e1b76d66?w=1080")!, AFURLSource(urlString: "https://images.unsplash.com/photo-1463595373836-6e0b0a8ee322?w=1080")!]
-//    let alamofireSource = [AlamofireSource(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")!, AlamofireSource(urlString: "https://images.unsplash.com/photo-1447746249824-4be4e1b76d66?w=1080")!, AlamofireSource(urlString: "https://images.unsplash.com/photo-1463595373836-6e0b0a8ee322?w=1080")!]
-//    let sdWebImageSource = [SDWebImageSource(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")!, SDWebImageSource(urlString: "https://images.unsplash.com/photo-1447746249824-4be4e1b76d66?w=1080")!, SDWebImageSource(urlString: "https://images.unsplash.com/photo-1463595373836-6e0b0a8ee322?w=1080")!]
-//    let kingfisherSource = [KingfisherSource(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")!, KingfisherSource(urlString: "https://images.unsplash.com/photo-1447746249824-4be4e1b76d66?w=1080")!, KingfisherSource(urlString: "https://images.unsplash.com/photo-1463595373836-6e0b0a8ee322?w=1080")!]
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
