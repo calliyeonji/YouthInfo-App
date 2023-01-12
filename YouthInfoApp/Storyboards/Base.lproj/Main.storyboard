@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +18,8 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                        <color key="selectedImageTintColor" systemColor="systemPurpleColor"/>
+                        <color key="tintColor" name="AccentColor"/>
+                        <color key="selectedImageTintColor" name="AccentColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="bxm-tu-KOx" kind="relationship" relationship="viewControllers" id="osr-0G-dRC"/>
@@ -40,6 +42,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="faT-mG-aqc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="AccentColor"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="알림" id="G6T-tK-MH0"/>
@@ -53,10 +56,16 @@
         <scene sceneID="lJx-Fs-vsE">
             <objects>
                 <navigationController id="6Rc-la-Bvf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="알림" image="bell" catalog="system" id="8eA-ID-lZj"/>
+                    <tabBarItem key="tabBarItem" title="알림" image="bell" catalog="system" id="8eA-ID-lZj">
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="383-sV-eLn">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="AccentColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="AccentColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="2tE-JC-6Rh" kind="relationship" relationship="rootViewController" id="owi-fC-zeB"/>
@@ -75,6 +84,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="daC-3a-qWS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="AccentColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="검색" id="OpT-yJ-jVM"/>
                 </viewController>
@@ -86,10 +96,16 @@
         <scene sceneID="Vux-sI-BFk">
             <objects>
                 <navigationController id="UU8-EF-3Ne" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="검색" image="magnifyingglass" catalog="system" id="CHw-qx-2ra"/>
+                    <tabBarItem key="tabBarItem" title="검색" image="magnifyingglass" catalog="system" id="CHw-qx-2ra">
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iLd-j3-6xa">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="AccentColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="AccentColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="png-rm-98g" kind="relationship" relationship="rootViewController" id="DLK-Y0-IV6"/>
@@ -108,6 +124,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="60r-Bf-lPk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="AccentColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="즐겨찾기" id="SoN-dy-3SG"/>
                 </viewController>
@@ -118,12 +135,22 @@
         <!--즐겨찾기-->
         <scene sceneID="nmu-aM-o1h">
             <objects>
-                <navigationController title="즐겨찾기" id="6Li-QI-nZj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="즐겨찾기" image="bookmark" catalog="system" id="IZ6-eJ-b9J"/>
+                <navigationController title="즐겨찾기" toolbarHidden="NO" id="6Li-QI-nZj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="즐겨찾기" image="bookmark" catalog="system" id="IZ6-eJ-b9J">
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zwe-zD-CGv">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="AccentColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="AccentColor"/>
+                        </textAttributes>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zPC-eg-cuW">
+                        <rect key="frame" x="0.0" y="712" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="6Dz-8z-3xI" kind="relationship" relationship="rootViewController" id="YH8-4r-kBj"/>
                     </connections>
@@ -136,10 +163,16 @@
         <scene sceneID="hVz-Hl-yq6">
             <objects>
                 <navigationController title="마이페이지" id="I6A-FF-QyT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="마이페이지" image="person" catalog="system" id="qVC-7F-hSl"/>
+                    <tabBarItem key="tabBarItem" title="마이페이지" image="person" catalog="system" id="qVC-7F-hSl">
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="39O-LR-5w1">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="AccentColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="AccentColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="72n-bQ-GQh" kind="relationship" relationship="rootViewController" id="3mS-lT-AcY"/>
@@ -271,6 +304,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7ad-oW-83i"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="AccentColor"/>
                         <constraints>
                             <constraint firstItem="UZV-sV-TKq" firstAttribute="top" secondItem="zLR-TU-P0x" secondAttribute="bottom" constant="6" id="Em6-hG-bRC"/>
                             <constraint firstItem="7ad-oW-83i" firstAttribute="bottom" secondItem="UZV-sV-TKq" secondAttribute="bottom" constant="121" id="J7b-Nq-bQ3"/>
@@ -282,7 +316,9 @@
                             <constraint firstItem="zLR-TU-P0x" firstAttribute="leading" secondItem="7ad-oW-83i" secondAttribute="leading" id="rKy-ED-1Bp"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="mypage" image="person.fill" catalog="system" selectedImage="person.fill" id="LeU-nW-ug3"/>
+                    <tabBarItem key="tabBarItem" title="mypage" image="person.fill" catalog="system" selectedImage="person.fill" id="LeU-nW-ug3">
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="ucp-64-Xbf"/>
                     <connections>
                         <outlet property="nickName" destination="bX6-Pe-4cG" id="pys-Ss-dBP"/>
@@ -308,14 +344,14 @@
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="selfie (1)" width="170.66667175292969" height="170.66667175292969"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

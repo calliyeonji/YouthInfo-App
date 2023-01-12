@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,6 +18,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QLO-jb-WIH">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="AccentColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="AccentColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="GgJ-6O-jRX" kind="relationship" relationship="rootViewController" id="bcj-yo-OOK"/>
@@ -119,6 +124,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ond-kk-DYP" kind="show" id="GOM-i0-Gpv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXV-qa-Rgq">
                                 <rect key="frame" x="293" y="302" width="81" height="73.666666666666686"/>
@@ -243,6 +251,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="C52-6v-iqt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="AccentColor"/>
                         <constraints>
                             <constraint firstItem="9xZ-Ry-On2" firstAttribute="leading" secondItem="Afz-K8-ODC" secondAttribute="trailing" constant="12" id="1f5-RS-UbC"/>
                             <constraint firstItem="KK0-Q1-c83" firstAttribute="centerY" secondItem="a1y-wK-QmA" secondAttribute="centerY" id="2dT-iQ-fH1"/>
@@ -276,7 +285,9 @@
                             <constraint firstItem="t06-r7-tsD" firstAttribute="centerX" secondItem="Li3-pk-zrW" secondAttribute="centerX" id="yXu-xM-qIh"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="jYs-fR-IAO"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="jYs-fR-IAO">
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="HzZ-vS-3Dz"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -295,9 +306,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="xkf-wh-XBO">
+                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" id="xkf-wh-XBO">
                             <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="barTintColor" name="AccentColor"/>
                             <textInputTraits key="textInputTraits"/>
                             <connections>
                                 <outlet property="delegate" destination="lIx-Jg-DNN" id="dWN-ki-Ibz"/>
@@ -368,17 +380,18 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="일자리 카페" id="5tn-E8-91L">
                         <barButtonItem key="leftBarButtonItem" enabled="NO" title="btnPrev" image="arrow.left" catalog="system" id="Gzy-sk-cb7">
+                            <color key="tintColor" name="AccentColor"/>
                             <connections>
                                 <action selector="btnPrev:" destination="lIx-Jg-DNN" id="Zs0-R5-6rz"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" enabled="NO" title="btnNext" image="arrow.right" catalog="system" id="Lc5-Kc-DJW">
+                            <color key="tintColor" name="AccentColor"/>
                             <connections>
                                 <action selector="btnNext:" destination="lIx-Jg-DNN" id="Xiy-KK-gLD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="btnNext" destination="Lc5-Kc-DJW" id="MZd-jA-zzt"/>
                         <outlet property="btnPrev" destination="Gzy-sk-cb7" id="iEh-n2-tx2"/>
@@ -387,7 +400,36 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epx-I0-Arp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5791" y="4101"/>
+            <point key="canvasLocation" x="-5832" y="4147"/>
+        </scene>
+        <!--청년정책-->
+        <scene sceneID="qoe-40-Erw">
+            <objects>
+                <tableViewController title="청년정책" id="ond-kk-DYP" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="cYA-i1-4pm">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="itD-gW-TMZ">
+                                <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="itD-gW-TMZ" id="Lo0-nV-Kfp">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ond-kk-DYP" id="b4j-m5-cnC"/>
+                            <outlet property="delegate" destination="ond-kk-DYP" id="Qdj-ed-Iup"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" style="editor" id="WWf-ZM-SSw"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tbi-ba-yTc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5832" y="4824"/>
         </scene>
         <!--작은도서관-->
         <scene sceneID="pAx-Q6-IJh">
@@ -397,9 +439,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="QXg-Aa-tSu">
+                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" id="QXg-Aa-tSu">
                             <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="barTintColor" name="AccentColor"/>
                             <textInputTraits key="textInputTraits"/>
                             <connections>
                                 <outlet property="delegate" destination="b4J-im-F7T" id="4tw-up-ZSc"/>
@@ -471,17 +514,18 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="작은도서관" id="AS8-IN-51Q">
                         <barButtonItem key="leftBarButtonItem" enabled="NO" title="btnPrev" image="arrow.left" catalog="system" id="5Mq-eZ-ygh">
+                            <color key="tintColor" name="AccentColor"/>
                             <connections>
                                 <action selector="btnPrev:" destination="b4J-im-F7T" id="Bk4-Ds-I2A"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" enabled="NO" title="btnNext" image="arrow.right" catalog="system" id="QN6-UI-ZwH">
+                            <color key="tintColor" name="AccentColor"/>
                             <connections>
                                 <action selector="btnNext:" destination="b4J-im-F7T" id="9mC-OC-6AJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="btnNext" destination="QN6-UI-ZwH" id="lz2-ID-aal"/>
                         <outlet property="btnPrev" destination="5Mq-eZ-ygh" id="nmB-Rn-Pqb"/>
@@ -490,7 +534,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Kp-Vd-EYy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5791" y="4773"/>
+            <point key="canvasLocation" x="-5832" y="3473"/>
         </scene>
         <!--Small Library Detail View Controller-->
         <scene sceneID="G7M-NG-nR0">
@@ -513,14 +557,14 @@
                         <viewLayoutGuide key="safeArea" id="sYv-cF-hUz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="EKE-cb-pUk"/>
+                    <navigationItem key="navigationItem" style="editor" id="EKE-cb-pUk"/>
                     <connections>
                         <outlet property="webView" destination="fgk-zR-bUM" id="Qh4-wt-3nq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ca-9p-G36" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5020" y="4773"/>
+            <point key="canvasLocation" x="-5058" y="3471"/>
         </scene>
     </scenes>
     <resources>
@@ -538,6 +582,9 @@
         <image name="menu_ico6" width="40" height="40"/>
         <image name="menu_ico7" width="40" height="40"/>
         <image name="menu_ico8" width="40" height="40"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.54107367897077563" blue="0.50547596704371955" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
