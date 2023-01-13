@@ -17,7 +17,7 @@ class SmallLibraryTableViewController: UITableViewController {
     var rootResult: SeoulSmallLibraryInfoData?
     var librarys: [SmallLibraryInfo] = [] //작은도서관 data
     var apiKey = "6170734a6f79656f363055577a6c67" //key값
-//    var startPage:Int = 0
+    //    var startPage:Int = 0
     var endPage:Int = 0
     var startPage = 1
     //    var page //페이지 전환을 위한 변수 선언
@@ -192,21 +192,21 @@ class SmallLibraryTableViewController: UITableViewController {
         //        }
         
         
-//        if segue.identifier == "detail" {
-//            guard let indexPath = tableView.indexPathForSelectedRow else { return }
-//            let cafe = self.librarys[indexPath.row]
-//            let vc = segue.destination as? SmallLibraryDetailViewController
-//            vc?.strURL = cafe.HMPG_URL
-//        }
-            if segue.identifier == "detail" {
-                guard let indexPath = tableView.indexPathForSelectedRow else { return }
-                let cafe = self.librarys[indexPath.row]
-                
-                let vc = segue.destination as? SmallLibraryDetailViewController
-                vc?.strURL = cafe.HMPG_URL
-             
-                    
-            }
+        //        if segue.identifier == "detail" {
+        //            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        //            let cafe = self.librarys[indexPath.row]
+        //            let vc = segue.destination as? SmallLibraryDetailViewController
+        //            vc?.strURL = cafe.HMPG_URL
+        //        }
+        if segue.identifier == "detail" {
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            let cafe = self.librarys[indexPath.row]
+            
+            let vc = segue.destination as? SmallLibraryDetailViewController
+            vc?.strURL = cafe.HMPG_URL
+            
+            
+        }
     }
 }
 

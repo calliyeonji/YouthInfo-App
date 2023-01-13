@@ -16,9 +16,9 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nWQ-O3-AeA">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                         <color key="tintColor" name="AccentColor"/>
+                        <color key="barTintColor" name="AccentColor"/>
                         <color key="selectedImageTintColor" name="AccentColor"/>
                     </tabBar>
                     <connections>
@@ -345,7 +345,7 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="selfie (1)" width="170.66667175292969" height="170.66667175292969"/>
         <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.54107367897077563" blue="0.50547596704371955" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
