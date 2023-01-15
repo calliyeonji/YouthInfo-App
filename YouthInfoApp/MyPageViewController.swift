@@ -87,7 +87,7 @@ extension MyPageViewController:UITableViewDataSource, UITableViewDelegate{
             label?.text = "로그아웃"
             
         default:
-            print("디폴트~")
+            print("기본값")
         }
         return cell
     }
