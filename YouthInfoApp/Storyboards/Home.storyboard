@@ -151,6 +151,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="nsG-DE-fDv" kind="show" id="Inn-P9-fnF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1y-wK-QmA">
                                 <rect key="frame" x="15" y="383" width="81" height="73.666666666666686"/>
@@ -566,6 +569,35 @@
             </objects>
             <point key="canvasLocation" x="-5058" y="3471"/>
         </scene>
+        <!--청년정책-->
+        <scene sceneID="p7e-XU-08b">
+            <objects>
+                <tableViewController title="청년정책" id="nsG-DE-fDv" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="vbD-Yc-NSx">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ulg-vZ-tJf">
+                                <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ulg-vZ-tJf" id="bLK-fz-bXu">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nsG-DE-fDv" id="y7Z-Lq-ZTA"/>
+                            <outlet property="delegate" destination="nsG-DE-fDv" id="y7o-sQ-3D7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" style="editor" id="Yl9-bA-r9K"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OHe-HP-WML" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5832" y="5501"/>
+        </scene>
     </scenes>
     <resources>
         <image name="KakaoTalk_Photo_2022-11-01-20-11-42" width="50" height="47"/>
@@ -583,7 +615,7 @@
         <image name="menu_ico7" width="40" height="40"/>
         <image name="menu_ico8" width="40" height="40"/>
         <namedColor name="AccentColor">
-            <color red="1" green="0.54107367897077563" blue="0.50547596704371955" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="1" green="0.54100000858306885" blue="0.50499999523162842" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
