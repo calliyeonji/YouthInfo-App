@@ -81,15 +81,34 @@
                     <view key="view" contentMode="scaleToFill" id="u43-Do-IcZ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="궁금한 내용을 검색 해보세요." translatesAutoresizingMaskIntoConstraints="NO" id="KD4-AF-JF4">
+                                <rect key="frame" x="16" y="91" width="358" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="daC-3a-qWS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="daC-3a-qWS" firstAttribute="bottom" secondItem="KD4-AF-JF4" secondAttribute="bottom" constant="626" id="Pgr-tb-YCR"/>
+                            <constraint firstItem="KD4-AF-JF4" firstAttribute="trailing" secondItem="u43-Do-IcZ" secondAttribute="trailingMargin" id="QZp-vh-Icl"/>
+                            <constraint firstItem="KD4-AF-JF4" firstAttribute="leading" secondItem="u43-Do-IcZ" secondAttribute="leadingMargin" id="Wy1-iX-Wha"/>
+                            <constraint firstItem="KD4-AF-JF4" firstAttribute="top" secondItem="daC-3a-qWS" secondAttribute="top" id="bfW-yN-upK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="검색" id="OpT-yJ-jVM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lzC-xd-5Tc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="궁금한 내용을 검색 해보세요." translatesAutoresizingMaskIntoConstraints="NO" id="VzI-bO-n3P">
+                    <rect key="frame" x="0.0" y="0.0" width="360" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="LAp-Mu-6TB"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
             </objects>
-            <point key="canvasLocation" x="-2678" y="4182"/>
+            <point key="canvasLocation" x="-2678.4615384615386" y="4181.5165876777246"/>
         </scene>
         <!--검색-->
         <scene sceneID="Vux-sI-BFk">
@@ -344,7 +363,7 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="selfie (1)" width="170.66667175292969" height="170.66667175292969"/>
         <namedColor name="AccentColor">
-            <color red="1" green="0.54107367897077563" blue="0.50547596704371955" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="1" green="0.54100000858306885" blue="0.50499999523162842" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
